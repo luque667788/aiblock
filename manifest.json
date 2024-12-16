@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "aiblock",
+    "version": "1.0",
+    "description": "blocks websites that make you unproductive with AI",
+    "icons": {
+        "48": "icons/blogo.webp"
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "storage"
+    ],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "exclude_matches": ["*://*.mozilla.org/*", "http://localhost/*", "https://localhost/*", "file:///"],
+
+        "js": ["main.js"]
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
