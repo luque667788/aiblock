@@ -4,7 +4,7 @@
     "version": "1.0",
     "description": "blocks websites that make you unproductive with AI",
     "icons": {
-        "48": "icons/blogo.webp"
+        "48": "icons/logo.webp"
     },
     "permissions": [
         "webRequest",

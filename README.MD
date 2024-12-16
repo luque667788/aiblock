@@ -24,4 +24,4 @@ This is just a rough sketch / MVP of an idea. Future work may include, but is no
 
 Contributions are welcome. Submit issues or pull requests to help improve the project.
 
-Thank you for checking out this project! If you have any questions or feedback, feel free to open an issue or contact me directly. [LinkedIn](https://www.linkedin.com/in/luiz-henrique-salles-de-oliveira-mendon%C3%A7a-3963b928b)LinkedIn
+Thank you for checking out this project! If you have any questions or feedback, feel free to open an issue or contact me directly. [LinkedIn](https://www.linkedin.com/in/luiz-henrique-salles-de-oliveira-mendon%C3%A7a-3963b928b)
