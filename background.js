@@ -30,11 +30,11 @@ async function checkWithAI(tabId, url, content = '') {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+                "model": "nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf",
                 "messages": [
                     {
                         "role": "system",
-                        "content": "You are a strict productivity guardian designed to prevent distractions. Your role is to analyze websites with the sole purpose of blocking any that are not directly related to studying, programming, or productivity. \n\n**Guidelines:**\n1. If the website has any association with social media, entertainment, gaming, or unrelated content, block it.\n2. If there is uncertainty about its relevance to work or studying, block it.\n3. Only allow websites clearly dedicated to work, research, or learning tools for students and programmers. Err on the side of blocking to ensure focus."
+                        "content": "You are a website productivity analyzer. If the website is related to studying in university eletrical engineering and information technology, do not block it; if it's unrelated to productivity (I am student bachelor in eletrical engineering and information technolgy study STEM subjects), block it. Analyze the content thoroughly. you should decide to block or not block the website. in the should_block field, enter true if you want to block the website, and false if you don't want to block it. Games, unrelated google searches and social media should be blocked. "
                     },
                     {
                         "role": "user",
@@ -57,7 +57,7 @@ async function checkWithAI(tabId, url, content = '') {
                         }
                     }
                 },
-                "temperature": 0,
+                "temperature": 50,
                 "max_tokens": 50,
                 "stream": false
             })
